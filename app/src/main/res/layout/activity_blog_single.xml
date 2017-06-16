@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hiro.blogmaterial.BlogSingleActivity">
+
+    <ImageView
+        android:id="@+id/singleBlogImg"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/add_btn"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/singleBlogTitle"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/singleBlogImg"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="17dp"
+        android:text="Title show here" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/singleBlogContent"
+        android:textSize="18sp"
+        android:text="Content show here"
+        android:layout_below="@+id/singleBlogTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        />
+
+    <Button
+        android:id="@+id/postRemove"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="15dp"
+        android:drawableTop="@android:drawable/ic_menu_delete"
+        android:visibility="invisible"/>
+</RelativeLayout>

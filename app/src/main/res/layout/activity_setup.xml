@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hiro.blogmaterial.SetupActivity">
+
+
+    <TextView
+        android:id="@+id/tx_setup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="Setup Account"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/pickImgAva"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/tx_setup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#00ffffff"
+        android:scaleType="centerCrop"
+        android:src="@drawable/defaultava"
+        app:srcCompat="@drawable/defaultava" />
+
+    <EditText
+        android:id="@+id/nameDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pickImgAva"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Display Name" />
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameDisplay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Apply" />
+</RelativeLayout>
